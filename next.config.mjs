@@ -1,4 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+ const nextConfig = {
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'darkdes-django-t3b02.tw1.ru',
+            port: '',
+            pathname: '/media/media/**',
+            search: '',
+          },
+        ],
+      },
+ };
 
 export default nextConfig;
+ 
